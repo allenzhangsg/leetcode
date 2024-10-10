@@ -6,6 +6,7 @@ class Solution:
         dp = {}
 
         def func(i, j) -> int:
+            nonlocal dp
             if f"{i}:{j}" not in dp:
                 if i == 0 or j == 0:
                     return int(matrix[i][j])
